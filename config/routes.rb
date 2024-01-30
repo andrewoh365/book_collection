@@ -4,4 +4,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  get 'books/:id/confirm_delete', to: 'books#confirm_delete', as: :confirm_delete_book
 end
